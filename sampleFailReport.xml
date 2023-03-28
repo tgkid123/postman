@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="trello" tests="10" time="3.687">
+  <testsuite name="get all boards" id="cfb8e4d9-5db5-48bd-82b0-0336285cc290" timestamp="2023-03-28T00:53:03.359Z" tests="1" failures="1" errors="0" time="0.421">
+    <testcase name="Status code is 200" time="0.421" classname="Trello">
+      <failure type="AssertionFailure" message="expected response to have status code 201 but got 200">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: b366d0ea-3c86-464f-85ca-6837a0e2421d.]]>
+        <![CDATA[Collection name: trello.]]>
+        <![CDATA[Request name: get all boards.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected response to have status code 201 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 201 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="create board" id="f81ba8ac-32b6-465e-b984-a4d67902c2bb" timestamp="2023-03-28T00:53:03.359Z" tests="3" failures="0" errors="0" time="0.386">
+    <testcase name="Status code is 200" time="0.386" classname="Trello"/>
+    <testcase name="Board name is accurate" time="0.386" classname="Trello"/>
+    <testcase name="Board name matches variable" time="0.386" classname="Trello"/>
+  </testsuite>
+  <testsuite name="get a board" id="4dec7a64-5d28-48df-a3fc-1518ca352f09" timestamp="2023-03-28T00:53:03.359Z" tests="3" failures="0" errors="0" time="0.174">
+    <testcase name="Status code is 200" time="0.174" classname="Trello"/>
+    <testcase name="Board name is accurate" time="0.174" classname="Trello"/>
+    <testcase name="Board name matches variable" time="0.174" classname="Trello"/>
+  </testsuite>
+  <testsuite name="create a TO DO list" id="4f8fa540-abf2-4c3d-a147-f53f35069187" timestamp="2023-03-28T00:53:03.359Z" tests="2" failures="0" errors="0" time="0.213">
+    <testcase name="Status code is 200" time="0.213" classname="Trello"/>
+    <testcase name="the name of the list is DONE" time="0.213" classname="Trello"/>
+  </testsuite>
+  <testsuite name="create a DONE list" id="28ee2fcf-7772-4550-a455-a6dcfb373ead" timestamp="2023-03-28T00:53:03.359Z" tests="2" failures="0" errors="0" time="0.221">
+    <testcase name="Status code is 200" time="0.221" classname="Trello"/>
+    <testcase name="the name of the list is DONE" time="0.221" classname="Trello"/>
+  </testsuite>
+  <testsuite name="get lists on a board" id="05addd0b-e96a-4363-9ba3-9b64f71b7224" timestamp="2023-03-28T00:53:03.359Z" tests="2" failures="0" errors="0" time="0.170">
+    <testcase name="Status code is 200" time="0.170" classname="Trello"/>
+    <testcase name="Board name is accurate" time="0.170" classname="Trello"/>
+  </testsuite>
+  <testsuite name="create a card" id="1f4163eb-8ca8-4412-8e15-5f35dcedc0e1" timestamp="2023-03-28T00:53:03.359Z" tests="5" failures="0" errors="0" time="0.591">
+    <testcase name="Status code is 200" time="0.591" classname="Trello"/>
+    <testcase name="the name of the card is Learn Postman" time="0.591" classname="Trello"/>
+    <testcase name="should not be closed" time="0.591" classname="Trello"/>
+    <testcase name="test that the card was created in the desired TODO list" time="0.591" classname="Trello"/>
+    <testcase name="test that the card was created in the desired board" time="0.591" classname="Trello"/>
+  </testsuite>
+  <testsuite name="get cards on a list" id="61786bda-f955-4964-97e7-feeb91350039" timestamp="2023-03-28T00:53:03.359Z" tests="2" failures="0" errors="0" time="0.177">
+    <testcase name="Status code is 200" time="0.177" classname="Trello"/>
+    <testcase name="cardId check" time="0.177" classname="Trello"/>
+  </testsuite>
+  <testsuite name="update a card" id="68d16431-6afe-4dda-89e3-3fb3a3f2c916" timestamp="2023-03-28T00:53:03.359Z" tests="3" failures="0" errors="0" time="0.280">
+    <testcase name="Status code is 200" time="0.280" classname="Trello"/>
+    <testcase name="the name of the card is still Learn Postman" time="0.280" classname="Trello"/>
+    <testcase name="test that the card was moved to the desired DONE list" time="0.280" classname="Trello"/>
+  </testsuite>
+  <testsuite name="delete a board" id="b42751a9-1331-4fa7-9caf-c38c1a8d3a76" timestamp="2023-03-28T00:53:03.359Z" tests="1" failures="0" errors="0" time="1.054">
+    <testcase name="Status code is 200" time="1.054" classname="Trello"/>
+  </testsuite>
+</testsuites>
